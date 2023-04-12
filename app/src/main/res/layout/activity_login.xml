@@ -113,10 +113,10 @@
         app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
         app:layout_constraintStart_toStartOf="@+id/passwordEditText"
         app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTextView"
-        app:layout_marginTop="30dp" />
+        app:layout_marginBaseline="30dp" />
 
     <TextView
-        android:id="@+id/skipNowButton1"
+        android:id="@+id/skipNowButtonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Skip Now"
@@ -126,7 +126,10 @@
         app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="@+id/appCompatButton"
         app:layout_constraintTop_toBottomOf="@+id/appCompatButton"
-        app:layout_constraintVertical_bias="0.219" />
+        app:layout_constraintVertical_bias="0.219"
+        android:onClick="onClick"
+        android:clickable="true"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

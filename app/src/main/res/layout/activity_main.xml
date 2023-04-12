@@ -36,6 +36,7 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,6 +46,8 @@
         app:layout_constraintStart_toStartOf="@id/design_image_bb"
         android:layout_marginBottom="60dp"
         android:textSize="19sp"
+        android:onClick="onClick"
+        android:clickable="true"
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -52,6 +55,7 @@
         android:layout_height="40dp"
         android:layout_marginEnd="50dp"
         android:text="Next"
+        android:id="@+id/nextButton"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/skipNowButton"
@@ -59,6 +63,15 @@
         app:layout_constraintTop_toTopOf="@+id/skipNowButton"
         android:background="@drawable/button_shape"
         />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="700dp"
+        android:layout_height="134dp"
+        android:rotation="-29"
+        app:srcCompat="@drawable/button_shape"
+        tools:layout_editor_absoluteX="-196dp"
+        tools:layout_editor_absoluteY="169dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
